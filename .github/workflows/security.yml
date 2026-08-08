@@ -13,7 +13,7 @@ jobs:
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'fs'
-          security-checks: 'vuln,config'
+          scanners: 'vuln,config'
           hide-progress: true
           exit-code: '1' 
           severity: 'CRITICAL,HIGH'
