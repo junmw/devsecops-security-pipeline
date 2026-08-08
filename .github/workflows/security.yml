@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - name: 1. Fetch current repository files
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
 
       - name: 2. Run Trivy Vulnerability Scanner
         uses: aquasecurity/trivy-action@master
