@@ -1,0 +1,19 @@
+name: DevSecOps Automated Guardrail
+
+on: [push]
+
+jobs:
+  vulnerability-scan:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: 1. Fetch current repository files
+        uses: actions/checkout@v4
+
+      - name: 2. Run Trivy Vulnerability Scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          security-checks: 'vuln,config'
+          hide-progress: true
+          exit-code: '1' 
+          severity: 'CRITICAL,HIGH'
