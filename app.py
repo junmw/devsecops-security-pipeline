@@ -1,6 +1,8 @@
-# A simple script that simulates processing user data
 def process_user():
-    print("Initializing corporate application...")
+    print("Initializing application...")
+    
+    AWS_KEY = "PASSWORDLEAK"    
+    
     user_status = "Active"
     return user_status
 
