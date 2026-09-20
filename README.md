@@ -1,4 +1,4 @@
-# ### DevSecOps Security Pipeline
+#DevSecOps Security Pipeline
 
 A robust, automated **DevSecOps Security Pipeline** designed to integrate continuous security testing directly into your software development lifecycle. This repository serves as an automated "Shift-Left" security blueprint, embedding secrets detection and vulnerability scanning gates directly into GitHub Actions. 
 
